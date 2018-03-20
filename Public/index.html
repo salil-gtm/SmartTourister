@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+      
+      <link rel="stylesheet" href="css/third.css">    
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<html>
+  <body>
+    <header>
+    <div class="container">
+      <h1 class="logo">
+        Smart<span>TOURISTER</span>
+      </h1>
+    </div>
+  </header>
+    <div class="diamond"></div>
+    <div class="form-wrap">
+      <h2 class="mob">Hotel Booking Form</h2>
+      <h3 class="mob">Mobile Version</h3>
+      <h5 class="mob">view on a desktop for the full experience</h5>
+      <form action="/select" method="POST" target="_blank">
+        <div class="location">
+          <label for="location">ENTER CITY</label><br/>
+          <input type="text" name="location" placeholder="Jaipur"/><br/>
+        </div>
+        <div class="guests">
+          <label for="guests">NUMBER OF DAYS</label><br/><br/>
+          <button class="counter-btn" type="button" id="cnt-down">-</button>
+          <input type="text" id="guestNo" name="guests" value="2"/>
+          <button class="counter-btn" type="button" id="cnt-up">+</button>
+        </div>
+        <div class="dates">
+          <div class="arrival">
+            <label for="arrival">START DATE</label><br/>
+            <input name="arrival" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="margin-top: 10px;box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);">
+          <label for="loctypes" style="">TYPE OF LOCATIONS</label><br><br>
+          <div>
+
+            <input type="radio" name="loctypes" style="width: 15px;height: initial;"checked>Sighseeing
+            <input type="radio" name="loctypes" style="width: 17px;height: initial;">Shopping
+            <input type="radio" name="loctypes" style="width: 17px;height: initial;">Eating <br>
+            <input type="radio" name="loctypes" style="width: 17px;height: initial;">Hiking
+            <input type="radio" name="loctypes" style="width: 17px;height: initial;">Resting
+          </div>
+        </div>
+        <input type="hidden" name="type" id="hiddeninp">
+      </form>
+      <button class="btn" type="button">BOOK NOW</button>
+    </div>
+      <a class="twitter-timeline"  href="https://twitter.com/hashtag/SmartTourister" data-widget-id="976202679897788416">#SmartTourister Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </body>
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

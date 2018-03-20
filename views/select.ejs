@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Box Transform  " Tourism In Egypt "</title>
+  
+  
+  		<link rel="stylesheet" href="css/third.css">
+      <link rel="stylesheet" href="css/select.css">
+
+  
+</head>
+
+<body>
+	<header>
+    <div class="container">
+      <h1 class="logo">
+        Smart<span>TOURISTER</span>
+      </h1>
+    </div>
+  </header>
+
+  <div class="container">
+		
+		<% for(var i=0;i<obj.length;++i){ %>
+			<% if(i%5==0){ %>
+				<br>
+			<% } %>
+			<div class="item tm1">
+					<img src= <%= obj[i].thumbnail_url %> >
+				<p><%= obj[i].name %></p>
+				<!-- <p><%= obj[i].perex %></p> -->
+				<!-- <a href=<%= obj[i].url %> >Know More</a> -->
+			</div>
+
+		<% } %>
+
+<br><br><br><br>
+		<button id="prcBtn" onclick="submitBtn();">Proceed</button>
+	</div>
+
+	<form action="/final" method="POST" id="selectForm">
+		<input type="hidden" name="selected" id="idHidden">
+	</form>
+  
+
+    <script  src="js/select.js"></script>
+
+
+
+
+</body>
+
+</html>

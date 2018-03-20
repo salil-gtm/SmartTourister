@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+$green: #8DFEE1;
+$grey: #EBF3F5;
+$orange: #FEA88D;
+$color1: #888;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $green;
+  color: $color1;
+  font: 'Open Sans';
+  font-size: 100%;
+  overflow: hidden;
+  @media(max-width: 450px) {
+    background: $grey;
+    overflow: scroll;
+  }
+}
+
+.diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+             rotate(-45deg);
+  height: 550px;
+  width: 550px;
+  background: $grey;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 3px rgba(#111, .2);
+  transition: all .5s ease-in-out;
+  @media(max-width: 450px) {
+    display: none;
+  }
+}
+
+.mob {
+  display: none;
+  @media(max-width: 450px) {
+    display: inline-block;
+  }
+}
+
+.form-wrap {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  width: 350px;
+  @media(max-width: 450px) {
+    width: 80%;
+  }
+  form {
+    margin-bottom: 10px;
+  }
+}
+
+input {
+  padding: 15px 10px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 3px 20px rgba(#111, .1);
+  width: 100%;
+  height: 45px;
+  outline: $green;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+#guestNo {
+  width: 80px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+input[type="date"] {
+  &:webkit-inner-spin-button {
+    display: none;
+  } 
+}
+
+label {
+  padding-bottom: 10px;
+  display: inline;
+  float: left;
+}
+
+.counter-btn {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  text-align: top;
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 40px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 20px rgba(#111, .1);
+  cursor: pointer;
+  outline: none;
+  &:nth-child(2) {
+    float: right;
+  }
+  &:hover {
+    box-shadow: 1px 3px 20px rgba(#111, .3);
+  }
+}
+
+.guests {
+  margin: 10px;
+}
+
+.dates {
+  .arrival {
+    display: inline-block;
+    float: left;
+    width: 45%;
+  }
+  .departure {
+    display: inline-block;
+    float: right;
+    width: 45%;
+  }
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 100%;
+  height: 45px;
+  display: block;
+  background: $orange;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 3px 20px rgba(#111, .1);
+  border-radius: 3px;
+  outline: none;
+  &:hover {
+    background: darken($orange, 5%);
+  }
+}
+
+.windup {
+  transform: translate(-50%, -50%) rotate(0deg);
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+}
+.booked {
+  background: darken($green, 30%);
+  &:hover {
+     background: darken($green, 20%);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-35px);
+    left: -30px;
+    display: block;
+    height: 0px;
+    border-radius: 3px;
+    border: 20px solid darken($green, 30%);
+    border-left: 30px solid rgba(0,0,0,0);
+    border-right: 20px solid darken($green, 35%);
+    z-index: -1;
+    animation: ribbon-left .2s ease-in-out;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-35px);
+    right: -30px;
+    display: block;
+    height: 0px;
+    border-radius: 3px;
+    border: 20px solid darken($green, 30%);
+    border-right: 30px solid rgba(0,0,0,0);
+    border-left: 20px solid darken($green, 35%);
+    z-index: -1;
+    animation: ribbon-right .2s ease-in-out;
+  }
+}
+
+.linkbox {
+  display: none;
+}
+
+.links {
+  position: absolute;
+  transform: translateY(100px);
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  animation: fadeIn 3s ease;
+  background: darken($grey, 5%);
+  @media(max-width: 450px) {
+    transform: translateY(50px);
+  }
+  .origin, .me {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    padding: 10px 10px;
+    color: $color1;
+    border-radius: 5px;
+    p {
+      flex-grow: 1;
+    }
+    i {
+      flex-grow: 1;
+      font-size: 2em;
+      color: $color1;
+      &:hover {
+        color: darken($color1, 20%);
+      }
+    }
+  }
+}
+
+@keyframes ribbon-right {
+  0% {
+    transform: translate(-30px, -20px);
+  }
+}
+@keyframes ribbon-left {
+  0% {
+    transform: translate(30px, -20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}

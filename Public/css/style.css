@@ -1,0 +1,318 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #8DFEE1;
+  color: #888;
+  font: 'Open Sans';
+  font-size: 100%;
+  overflow: hidden;
+}
+@media (max-width: 450px) {
+  body {
+    background: #EBF3F5;
+    overflow: scroll;
+  }
+}
+
+.diamond {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  height: 600px;
+  width: 600px;
+  background: #EBF3F5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(17, 17, 17, 0.2);
+          box-shadow: 0px 0px 20px 3px rgba(17, 17, 17, 0.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+@media (max-width: 450px) {
+  .diamond {
+    display: none;
+  }
+}
+
+.mob {
+  display: none;
+}
+@media (max-width: 450px) {
+  .mob {
+    display: inline-block;
+  }
+}
+
+.form-wrap {
+  position: absolute;
+  text-align: center;
+  top: 67%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1em;
+  width: 350px;
+}
+@media (max-width: 450px) {
+  .form-wrap {
+    width: 80%;
+  }
+}
+.form-wrap form {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 15px 10px;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+          box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  width: 100%;
+  height: 45px;
+  outline: #8DFEE1;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+#guestNo {
+  width: 80px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+input[type="date"]:webkit-inner-spin-button {
+  display: none;
+}
+
+label {
+  padding-bottom: 10px;
+  display: inline;
+  float: left;
+}
+
+.counter-btn {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  text-align: top;
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: 300;
+  width: 40px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+          box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+.counter-btn:nth-child(2) {
+  float: right;
+}
+.counter-btn:hover {
+  -webkit-box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.3);
+          box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.3);
+}
+
+.guests {
+  margin: 10px;
+}
+
+.dates .arrival {
+  display: inline-block;
+  float: left;
+  width: 45%;
+}
+.dates .departure {
+  display: inline-block;
+  float: right;
+  width: 45%;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  margin: 20px auto;
+  width: 100%;
+  height: 45px;
+  display: block;
+  background: #FEA88D;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  -webkit-box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+          box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  border-radius: 3px;
+  outline: none;
+}
+.btn:hover {
+  background: #fe9574;
+}
+
+.windup {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+}
+
+.booked {
+  background: #02f0b3;
+}
+.booked:hover {
+  background: #28fdc6;
+}
+.booked:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  left: -30px;
+  display: block;
+  height: 0px;
+  border-radius: 3px;
+  border: 20px solid #02f0b3;
+  border-left: 30px solid rgba(0, 0, 0, 0);
+  border-right: 20px solid #02d7a0;
+  z-index: -1;
+  -webkit-animation: ribbon-left .2s ease-in-out;
+          animation: ribbon-left .2s ease-in-out;
+}
+.booked:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  right: -30px;
+  display: block;
+  height: 0px;
+  border-radius: 3px;
+  border: 20px solid #02f0b3;
+  border-right: 30px solid rgba(0, 0, 0, 0);
+  border-left: 20px solid #02d7a0;
+  z-index: -1;
+  -webkit-animation: ribbon-right .2s ease-in-out;
+          animation: ribbon-right .2s ease-in-out;
+}
+
+.linkbox {
+  display: none;
+}
+
+.links {
+  position: absolute;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 1;
+  -webkit-animation: fadeIn 3s ease;
+          animation: fadeIn 3s ease;
+  background: #dae9ed;
+}
+@media (max-width: 450px) {
+  .links {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+.links .origin, .links .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 10px;
+  color: #888;
+  border-radius: 5px;
+}
+.links .origin p, .links .me p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.links .origin i, .links .me i {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 2em;
+  color: #888;
+}
+.links .origin i:hover, .links .me i:hover {
+  color: #555555;
+}
+
+@-webkit-keyframes ribbon-right {
+  0% {
+    -webkit-transform: translate(-30px, -20px);
+            transform: translate(-30px, -20px);
+  }
+}
+
+@keyframes ribbon-right {
+  0% {
+    -webkit-transform: translate(-30px, -20px);
+            transform: translate(-30px, -20px);
+  }
+}
+@-webkit-keyframes ribbon-left {
+  0% {
+    -webkit-transform: translate(30px, -20px);
+            transform: translate(30px, -20px);
+  }
+}
+@keyframes ribbon-left {
+  0% {
+    -webkit-transform: translate(30px, -20px);
+            transform: translate(30px, -20px);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+/*-------------------------------------*/
+select{
+  height: 45px;
+  width: 55%;
+  border: none;
+  box-shadow: 1px 3px 20px rgba(17, 17, 17, 0.1);
+  border-radius: 1px;
+}
