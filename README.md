@@ -1,1 +1,1 @@
-# SmartTourister-
+# SmartTourister
