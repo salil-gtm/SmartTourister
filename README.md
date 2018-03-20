@@ -4,9 +4,9 @@ This platform has been made to find the best locations (ratings wise) in the cit
 It also gives an optimal sequence of visits (ratings wise). This will help the tourists to visit more spots in the same amount of
 time, therefore is beneficial to both the tourists & the authorities.
 
-![1st]()
-![2nd]()
-![3rd]()
+![1st](https://raw.githubusercontent.com/salil-gtm/SmartTourister/master/first.png)
+![2nd](https://raw.githubusercontent.com/salil-gtm/SmartTourister/master/second1.png)
+![3rd](https://raw.githubusercontent.com/salil-gtm/SmartTourister/master/second.png)
 
 Installation
 
