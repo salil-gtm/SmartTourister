@@ -1,7 +1,7 @@
 # SmartTourister
 ![Logo](https://raw.githubusercontent.com/salil-gtm/SmartTourister/master/logo.png)
 
-Demo - http://smarttourister.ml/
+Demo - http://smarttourister.ml
 
 Many times tourists do not plan their tours properly, hence end up making an ineffective and unnecessarily expensive trip.
 This platform has been made to find the best locations (ratings wise) in the city.
