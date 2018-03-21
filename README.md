@@ -45,6 +45,10 @@ Built With
     [NPM]
     [ejs]
 
+## Future Works [WiP]
+* Chat Bot Deployment on FB.
+* Connecting Twitter Scrapping module to the itinerary recommendation over email.
+
 Authors
 
 * **Salil Gautam** - [salil-gtm](https://github.com/salil-gtm)
