@@ -1,4 +1,5 @@
 # SmartTourister
+![Logo](https://raw.githubusercontent.com/salil-gtm/SmartTourister/master/logo.png)
 Many times tourists do not plan their tours properly, hence end up making an ineffective and unnecessarily expensive trip.
 This platform has been made to find the best locations (ratings wise) in the city.
 It also gives an optimal sequence of visits (ratings wise). This will help the tourists to visit more spots in the same amount of
