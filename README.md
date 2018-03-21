@@ -43,9 +43,9 @@ Built With
 
 Authors
 
-    Salil Gautam - salil-gtm
-    Shubham Verma - shubhamverma27
-    Nishant Gore - NishantGore
+* **Salil Gautam** - [salil-gtm](https://github.com/salil-gtm)
+* **Shubham Verma** - [shubhamverma27](https://github.com/shubhamverma27)
+* **Nishant Gore** - [NishantGore](https://github.com/nishantgore)
 
 License
 
