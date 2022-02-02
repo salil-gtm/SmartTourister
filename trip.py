@@ -8,11 +8,11 @@ import requests
 import pprint
 import pandas as pd
 import csv
-consumer_key = 'VsFHRtEopqnNRNDGRPnHQiGjw'
-consumer_secret = 'dORoVgIAIurvFMDo7rtOutcLZDBh3WWFKIDrlb1f5m2Gebuym1'
+consumer_key = ''
+consumer_secret = ''
 
-access_token = '771810838168506368-WIo6JHuPfC6vQGknSsE0qHThb3iuuGj'
-access_token_secret = 'P4YnVqrKcIbbIIx3aUtSr0n64NoOdA7TFbGIHnrbxkAh2'
+access_token = ''
+access_token_secret = ''
 
 types = ['discovering', 'eating', 'going_out', 'hiking', 'playing', 'relaxing', 'shopping', 'sightseeing', 'sleeping', 'doing_sports', 'traveling']
 
